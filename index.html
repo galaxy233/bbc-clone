@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>BBC - Homepage</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom style -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/5d79f599f5.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+  <nav>
+    <div class="logo">
+      <img src="http://static.bbci.co.uk/frameworks/barlesque/3.21.17/orb/4/img/bbc-blocks-light.png"/>
+    </div>
+    <div class="nav-link nav-sign-in">
+      <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+      <div class="blue">
+      </div>
+    </div>
+    <div class="nav-link hidden-xs">
+      Home
+      <div class="blue">
+      </div>
+    </div>
+    <div class="nav-link">
+      News
+      <div class="red">
+      </div>
+    </div>
+    <div class="nav-link">
+      Sport
+      <div class="yellow">
+      </div>
+    </div>
+    <div class="nav-link">
+      Weather
+      <div class="light-blue">
+      </div>
+    </div>
+    <div class="nav-link hidden-xs hidden-sm">
+      Shop
+      <div class="light-blue">
+      </div>
+    </div>
+    <div class="nav-link hidden-xs hidden-sm">
+      Earth
+      <div class="white">
+      </div>
+    </div>
+    <div class="nav-link hidden-xs hidden-sm">
+      Travel
+      <div class="white">
+      </div>
+    </div>
+    <div class="nav-link hidden-xs hidden-sm hidden-md">
+      Capital
+      <div class="white">
+      </div>
+    </div>
+    <div class="nav-link nav-expand">
+      More<span class="caret" style="text-align:right"></span>
+      <div class="white"></div>
+    </div>
+    <div class="nav-search hidden-md hidden-lg">
+      <i class="fa fa-search fa-2x"></i>
+    </div>
+    <div class="nav-search-form hidden-xs hidden-sm">
+        <input type="text" class="form-control" placeholder="Search" />
+    </div>
+  </nav>
+
+  <div class="more">
+    <h2>MORE</h2>
+    <div class="more-link">
+      Culture
+    </div>
+    <div class="more-link">
+      CBBC
+    </div>
+    <div class="more-link">
+      Music
+    </div>
+    <div class="more-link">
+      Local
+    </div>
+    <div class="more-link">
+      Autos
+    </div>
+    <div class="more-link">
+      CBeebies
+    </div>
+    <div class="more-link">
+      Arts
+    </div>
+    <div class="more-link">
+      Future
+    </div>
+    <div class="more-link">
+      Food
+    </div>
+    <div class="more-link">
+      Digital
+    </div>
+    <div class="more-link">
+      TV
+    </div>
+    <div class="more-link">
+      iWonder
+    </div>
+    <div class="more-link">
+      Taster
+    </div>
+    <div class="more-link">
+      Radio
+    </div>
+    <div class="more-link">
+      Bitesize
+    </div>
+    <div class="more-link">
+      Nature
+    </div>
+  </div>
+
+  <section id="intro">
+    <div class="container-fluid">
+      <div class="row">
+        <h3>Welcome to BBC</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".nav-link").hover(function() {
+        $(this).children("div").toggleClass("line");
+      })
+      $(".nav-expand").click(function() {
+        $(".more").toggleClass("expand")
+      })
+    })
+  </script>
+</body>
+
+</html>

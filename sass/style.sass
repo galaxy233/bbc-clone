@@ -1,0 +1,99 @@
+$font-stack: Helvetica, sans-serif
+$primary-color: #333
+$blue: #0066ff
+$red: #cc2900
+$yellow: #ffff1a
+$lightblue: #4da6ff
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+  font-weight: bold
+
+i
+  color: white
+
+nav
+  height: 40px
+  background-color: black
+  display: flex
+  align-items: center
+  font-size: 12px
+
+.blue
+  background-color: $blue
+
+.red
+  background-color: $red
+
+.yellow
+  background-color: $yellow
+
+.light-blue
+  background-color: $lightblue
+
+.white
+  background-color: white
+
+.nav-link, .nav-expand
+  color: white
+  position: relative
+
+.line
+  height: 4px
+  width: 100%
+  position: absolute
+  bottom: 0
+  left: 0
+
+.nav-expand
+  width: 80px
+
+.nav-expand > span
+  position: absolute
+  right: 10px
+  top: 18px
+
+nav > div
+  height: 100%
+  display: flex
+  align-items: center
+  padding: 10px
+  border-right: 1px solid grey
+
+.nav-search-form input
+  height: 25px
+  border-radius: 0px
+
+.more
+  margin: 10px
+  height: 150px
+  display: none
+
+
+.expand
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+
+.more-link
+  font-size: 14px
+  width: 50px
+  padding: 10px
+
+#intro
+  background-color: grey
+  height: 500px
+
+@media (min-width: 992px)
+  .nav-expand
+    width: 150px
+  .nav-sign-in
+    width: 150px
+    i
+      margin-right: 10px
+  .nav-sign-in::after
+    content: 'Sign In'
+    color: white
+  .more h2
+    margin-bottom: 100px
