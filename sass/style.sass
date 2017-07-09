@@ -5,6 +5,9 @@ $red: #cc2900
 $yellow: #ffff1a
 $lightblue: #4da6ff
 $grey: #4d4d4d
+$lightgrey: #cccccc
+$darkgrey: #333333
+$torquise: #47d1d1
 
 body
   font: 100% $font-stack
@@ -21,6 +24,7 @@ nav
   align-items: center
   font-size: 12px
 
+
 .blue
   background-color: $blue
 
@@ -35,6 +39,15 @@ nav
 
 .white
   background-color: white
+
+.torquise
+  background-color: $torquise
+
+.grey
+  background-color: $grey
+
+.darkgrey
+  background-color: $darkgrey
 
 .nav-link, .nav-expand
   color: white
@@ -60,9 +73,9 @@ nav
     width: 2px
     float: left
 
-.line-text p
+.line-text, p
   font-size: 16px
-  color: lightgrey
+  color: $lightgrey
   font-weight: lighter
 
 .nav-expand
@@ -118,7 +131,7 @@ nav > div
   margin: 0px 15px
 
 .hero
-  background-color: #cccccc
+  background-color: $lightgrey
   padding-bottom: 10px
   img
     width: 100%
@@ -153,8 +166,8 @@ nav > div
 
 .news-story
   position: relative
-  height: 350px
   margin-bottom: 25px
+  height: 350px
   img
     width: 100%
   h4
@@ -170,6 +183,63 @@ nav > div
     p
       margin-left: 10px
 
+.fixed-height
+  height: 350px
+
+/* Editor's Picks */
+.editor-picks
+  background-color: $lightgrey
+
+.editor-primary
+  width: 100%
+  img
+    width: 100%
+
+.story-text
+  h3
+    font-weight: bold
+  p
+    font-size: 14px
+    font-weight: lighter
+    color: $grey
+
+.editor-primary-text
+  height: 120px
+  position: absolute
+  background-color: white
+  width: 100%
+  bottom: -120px
+  padding-left: 10px
+
+
+.editor-story-container
+  margin-top: 15px
+  margin-bottom: 250px
+  width: 100%
+  height: 150px
+
+.editor-story
+  position: relative
+
+  img
+    width: 100%
+
+.editor-story-text
+  position: absolute
+  bottom: -250px
+  height: 250px
+  width: 100%
+  background-color: white
+  padding: 10px 15px
+  > div
+    position: absolute
+    bottom: 20px
+
+.business-news
+  width: 100%
+  height: 750px
+  background-color: $grey
+
 @media (min-width: 992px)
   .nav-expand
     width: 150px
@@ -183,5 +253,53 @@ nav > div
   .more h2
     margin-bottom: 100px
 
+@media (max-width: 1200px)
+  .editor-primary
+    margin-bottom: 120px
+
+@media (max-width: 767px)
+  .container-inner
+    margin-right: 0px !important
+
 .container-fluid
   max-width: 1170px
+
+.news-box
+  width: 335px
+  position: absolute
+  top: 0
+  right: -350px
+
+.news-box-intro
+  background-color: $red
+  color: white
+  height: 40px
+  display: flex
+  align-items: center
+  font-size: 16px
+  padding-left: 10px
+
+.news-box-headline
+  height: 150px
+  color: $lightgrey
+  padding: 10px 20px
+
+.circle
+  width: 50px
+  height: 50px
+  border-radius: 50px
+  background-color: $red
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 16px
+
+.container-inner
+  margin-right: 350px
+  position: relative
+
+.box
+  height: 250px
+  width: 100%
+  background-color: black
+  margin: 10px
