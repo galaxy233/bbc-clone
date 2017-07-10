@@ -12,6 +12,9 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom style -->
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Slick -->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/5d79f599f5.js"></script>
 
@@ -522,28 +525,115 @@
         </div>
       </div>
     </div>
+  </section>
 
-
-
+  <section class="featured-video">
+    <div class="container-fluid">
+      <div class="section-title">
+        <div class="light-blue"></div>
+        Featured video
+      </div>
+      <div class="row">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Bjd8nPKKIU4"></iframe>
+        </div>
+        <div class="video-slider">
+          <div class="slide">
+            <img src="img/slider-1.jpg" alt="hero">
+            <div>
+              <h5>When was this photo taken?</h5>
+              <div class="line-text">
+                <div class="light-blue"></div>
+                ENTERTAINMENT
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/slider-2.jpg" alt="hero">
+            <div>
+              <h5>Think Again: 'There is no obesity crisis'</h5>
+              <div class="line-text">
+                <div class="light-blue"></div>
+                MAGAZINE
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/slider-3.jpg" alt="hero">
+            <div>
+              <h5>Blind student on 'smartphone zombies'</h5>
+              <div class="line-text">
+                <div class="light-blue"></div>
+                ENGLAND
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/slider-4.jpg" alt="hero">
+            <div>
+              <h5>'I was on stage with Coldplay'</h5>
+              <div class="line-text">
+                <div class="light-blue"></div>
+                ENTERTAINMENT
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/slider-5.jpg" alt="hero">
+            <div>
+              <h5>Sexless in Japan</h5>
+              <div class="line-text">
+                <div class="light-blue"></div>
+                ASIA
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 
-
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js" charset="utf-8"></script>
   <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $(".nav-link").hover(function() {
-        $(this).children("div").toggleClass("line");
+        $(this).children("div").toggleClass("line")
       })
       $(".nav-expand").click(function() {
         $(".more").toggleClass("expand")
       })
+      $(".video-slider").slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 650,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
     })
+    $(document).on('ready', function() {
+
+    });
   </script>
 </body>
 

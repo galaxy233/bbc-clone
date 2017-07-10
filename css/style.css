@@ -283,10 +283,22 @@ nav > div {
   margin-right: 350px;
   position: relative; }
 
-.box {
-  height: 250px;
-  width: 100%;
+.slide {
   background-color: black;
-  margin: 10px; }
+  position: relative;
+  padding: 20px; }
+  .slide img {
+    width: 160px;
+    float: left;
+    margin-right: 10px; }
+  .slide h5 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold; }
+  .slide .line-text {
+    position: absolute;
+    bottom: 20px;
+    left: 190px;
+    font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */
