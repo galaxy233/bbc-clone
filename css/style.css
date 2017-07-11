@@ -302,6 +302,12 @@ nav > div {
       .video-toggle > div div:hover {
         border-bottom: 3px solid white; }
 
+.video-slider {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #4d4d4d;
+  overflow: hidden; }
+
 .slide {
   background-color: #4d4d4d;
   position: relative;
@@ -320,13 +326,25 @@ nav > div {
     left: 190px;
     font-size: 12px; }
 
-.slick-prev {
-  height: 50px;
+.slick-button {
+  height: 80px;
   width: 50px;
+  background-color: black;
   z-index: 2;
-  left: 10px; }
+  transition: 1s; }
+
+.slick-prev.slick-disabled {
+  left: -50px;
+  transition: 0.5s; }
+
+.slick-next.slick-disabled {
+  right: -50px;
+  transition: 0.5s; }
+
+.slick-prev {
+  left: 0; }
 
 .slick-next {
-  right: 10px; }
+  right: 0; }
 
 /*# sourceMappingURL=style.css.map */
