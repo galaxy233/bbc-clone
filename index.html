@@ -10,11 +10,13 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom style -->
-  <link rel="stylesheet" href="css/style.css" />
+
   <!-- Slick -->
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
+
+  <!-- Custom style -->
+  <link rel="stylesheet" href="css/style.css" />
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/5d79f599f5.js"></script>
 
@@ -537,6 +539,16 @@
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Bjd8nPKKIU4"></iframe>
         </div>
+        <div class="video-toggle">
+          <div>
+            <div>
+              Recommended
+            </div>
+            <div>
+              Latest
+            </div>
+          </div>
+        </div>
         <div class="video-slider">
           <div class="slide">
             <img src="img/slider-1.jpg" alt="hero">
@@ -615,6 +627,8 @@
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
+        // prevArrow: '<div class="slick-prev">Previous</div>',
+        // nextArrow: '<div class="slick-next">Next</div>',
         responsive: [
           {
             breakpoint: 1050,

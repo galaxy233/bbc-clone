@@ -298,11 +298,27 @@ nav > div
   margin-right: 350px
   position: relative
 
-.video-slider
-
+.video-toggle
+  width: 100%
+  border-bottom: 1px solid $lightgrey
+  height: 50px
+  background-color: $grey
+  padding-left: 20px
+  color: white
+  padding-left: 20px
+  padding-top: 15px
+  > div
+    height: 100%
+    display: flex
+    div
+      height: 100%
+      margin-right: 25px
+      font-size: 16px
+      &:hover
+        border-bottom: 3px solid white
 
 .slide
-  background-color: black
+  background-color: $grey
   position: relative
   padding: 20px
   img
@@ -318,3 +334,13 @@ nav > div
     bottom: 20px
     left: 190px
     font-size: 12px
+
+.slick-prev
+  height: 50px
+  width: 50px
+  // background-color: $yellow
+  z-index: 2
+  left: 10px
+
+.slick-next
+  right: 10px
