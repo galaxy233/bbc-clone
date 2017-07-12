@@ -225,27 +225,6 @@ nav > div {
   height: 750px;
   background-color: #4d4d4d; }
 
-@media (min-width: 992px) {
-  .nav-expand {
-    width: 150px; }
-
-  .nav-sign-in {
-    width: 150px; }
-    .nav-sign-in i {
-      margin-right: 10px; }
-
-  .nav-sign-in::after {
-    content: "Sign In";
-    color: white; }
-
-  .more h2 {
-    margin-bottom: 100px; } }
-@media (max-width: 1200px) {
-  .editor-primary {
-    margin-bottom: 120px; } }
-@media (max-width: 767px) {
-  .container-inner {
-    margin-right: 0px !important; } }
 .container-fluid {
   max-width: 1170px; }
 
@@ -331,7 +310,7 @@ nav > div {
   width: 50px;
   background-color: black;
   z-index: 2;
-  transition: 1s; }
+  transition: 0.5s; }
 
 .slick-prev.slick-disabled {
   left: -50px;
@@ -346,5 +325,105 @@ nav > div {
 
 .slick-next {
   right: 0; }
+
+.news-story-header i {
+  color: black;
+  font-weight: bold;
+  float: left;
+  margin-right: 10px; }
+
+.channels button {
+  background-color: #006bb3;
+  width: 175px;
+  height: 50px;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-right: 10px; }
+.channels a {
+  color: black;
+  font-size: 16px; }
+
+.channels .news-story {
+  height: 375px; }
+  .channels .news-story div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+
+.channel-box {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 12px; }
+  .channel-box > div {
+    margin-left: 10px;
+    display: flex;
+    align-items: center; }
+    .channel-box > div i {
+      margin-right: 10px; }
+
+.service-box {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 40px;
+  position: relative;
+  overflow: hidden; }
+  .service-box div {
+    position: absolute;
+    color: white;
+    height: 100%;
+    display: flex; }
+    .service-box div:first-child {
+      left: 0;
+      width: 150px;
+      background-color: red;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center; }
+    .service-box div:last-child {
+      right: 0;
+      width: 100%;
+      margin-right: -150px;
+      background-color: black;
+      align-items: center; }
+      .service-box div:last-child i {
+        margin: 10px; }
+
+.more-bbc {
+  background-color: #cccccc; }
+
+@media (min-width: 992px) {
+  .nav-expand {
+    width: 150px; }
+
+  .nav-sign-in {
+    width: 150px; }
+    .nav-sign-in i {
+      margin-right: 10px; }
+
+  .nav-sign-in::after {
+    content: "Sign In";
+    color: white; }
+
+  .more h2 {
+    margin-bottom: 100px; }
+
+  .more-bbc .container-inner {
+    margin-left: 350px;
+    margin-right: 0; }
+
+  .more-bbc .news-box {
+    left: -350px;
+    right: 0; } }
+@media (max-width: 1200px) {
+  .editor-primary {
+    margin-bottom: 120px; } }
+@media (max-width: 767px) {
+  .container-inner {
+    margin-right: 0px !important; } }
 
 /*# sourceMappingURL=style.css.map */
