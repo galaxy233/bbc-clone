@@ -139,6 +139,9 @@ nav > div
 
 .hero-primary
   margin-bottom: 10px
+  img
+    width: 100%
+    height: 100%
 
 .img-container
   position: relative
@@ -420,6 +423,82 @@ nav > div
 .more-bbc
   background-color: $lightgrey
 
+// World in pictures
+
+.world-pictures
+  background-color: $lightgrey
+  .news-story
+    background-color: white
+    > div
+      margin: 10px 10px 30px 10px
+      > p
+        margin-left: 0px
+
+.img-container,
+.news-story,
+.hero-primary
+  i
+    position: absolute
+    top: 0
+    left: 0
+    background-color: black
+    padding: 10px
+    color: white
+    z-index: 2
+
+footer
+  background-color: $grey
+  color: white
+  font-weight: normal
+
+.orb
+  overflow: hidden
+  border-bottom: 1px solid white
+  padding-bottom: 10px
+  li
+
+    font-size: 14px
+    display: block
+    list-style-type: none
+    padding: 10px 100px 10px 10px
+    width: 170px
+    margin: 0px 0px 0px -1px
+    float: left
+    border-left: 1px solid white
+
+.footer-links
+  display: flex
+  flex-wrap: wrap
+  list-style-type: none
+  margin: 10px 0px
+  font-size: 12px
+  li
+    margin: 10px 20px 10px 0px
+
+
+// Mobile
+
+.mobile-headline
+  padding-bottom: 10px
+  border-bottom: 1px solid black
+  h5
+    font-weight: bold
+  p
+    font-size: 12px
+    color: black
+  i
+    background-color: black
+    padding: 10px
+    float: left
+    margin-right: 10px
+
+.editor-mobile,
+.more-bbc-mobile,
+.world-pictures-mobile
+  margin-top: -100px
+
+
+
 @media (min-width: 992px)
   .nav-expand
     width: 150px
@@ -441,6 +520,21 @@ nav > div
       left: -350px
       right: 0
 
+@media (max-width: 576px)
+  .orb li
+    padding: 10px 70px 10px 10px
+    width: 120px
+
+
+@media (max-width: 992px)
+  .world-pictures
+    .news-story
+      height: 400px
+
+
+@media (min-width: 1062px)
+  .orb li
+    padding: 10px 140px 10px 10px
 
 @media (max-width: 1200px)
   .editor-primary
@@ -449,3 +543,7 @@ nav > div
 @media (max-width: 767px)
   .container-inner
     margin-right: 0px !important
+  .hero, .editor-picks, .more-bbc, .world-pictures
+    background-color: white
+  .hero-primary
+    margin-top: 15px
